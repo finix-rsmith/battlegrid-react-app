@@ -1,5 +1,5 @@
 import './App.css'
-import Logo from '../Logo/Logo.js'
+import { Logo } from '../Logo/Logo.js'
 import Tile from '../Tile/Tile.js'
 import Navbar from '../Navbar/Navbar.js'
 
@@ -9,6 +9,7 @@ function App() {
       <Navbar />
       <header className="App-header">
         <Logo Link="/" />
+        <div>Collectible Strategy Game</div>
         <div>
           <Tile Title="Characters" Link="/characters" />
           <Tile Title="Terrain" Link="/terrains" />

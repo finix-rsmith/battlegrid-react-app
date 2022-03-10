@@ -3,10 +3,22 @@
 }
 
 .Logo a {
-	margin-bottom: 20px;
 	float: left;
 }
 
 .Logo img {
 	height: 100px;	
+}
+
+.Icon {
+	padding: 15px;
+	float: left;
+}
+
+.Icon:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Icon img {
+	height: 50px;
 }

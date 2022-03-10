@@ -4,16 +4,19 @@
 	float: left;
 }
 
-.Navlink:hover {
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
 .Navlink a {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.7);
 	height: 40px;
 	padding: 20px;
 	line-height: 40px;
+	font-size: 14px;
 	font-weight: bold;
+	text-transform: uppercase;
 	text-decoration: none;
 	float: left;
+}
+
+.Navlink a:hover {
+	color: rgba(255, 255, 255, 1.0);
+	background-color: rgba(0, 0, 0, 0.5);	
 }
