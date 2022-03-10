@@ -1,0 +1,19 @@
+.Navlink {
+	text-align: center;
+	list-style: none;
+	float: left;
+}
+
+.Navlink:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Navlink a {
+	color: #fff;
+	height: 40px;
+	padding: 20px;
+	line-height: 40px;
+	font-weight: bold;
+	text-decoration: none;
+	float: left;
+}

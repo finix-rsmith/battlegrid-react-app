@@ -1,0 +1,12 @@
+.Logo {
+	float: left;
+}
+
+.Logo a {
+	margin-bottom: 20px;
+	float: left;
+}
+
+.Logo img {
+	height: 100px;	
+}

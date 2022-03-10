@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 100px;
-  pointer-events: none;
-  margin-bottom: 20px;
-}
-
 .App-header {
   background: url("battlegrid-bg.png") #282c34;
   background-size: cover;

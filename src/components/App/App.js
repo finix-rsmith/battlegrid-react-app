@@ -1,12 +1,14 @@
-import logo from './battlegrid-logo.png'
 import './App.css'
+import Logo from '../Logo/Logo.js'
 import Tile from '../Tile/Tile.js'
+import Navbar from '../Navbar/Navbar.js'
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Logo Link="/" />
         <div>
           <Tile Title="Characters" Link="/characters" />
           <Tile Title="Terrain" Link="/terrains" />
