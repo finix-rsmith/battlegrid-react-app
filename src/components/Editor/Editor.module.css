@@ -1,0 +1,12 @@
+.Editor {
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 400px;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+
+.Editor input {
+	width: calc(100% - 10px);
+}

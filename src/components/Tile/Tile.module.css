@@ -8,7 +8,6 @@
 	padding-bottom: 231px;
 	position: relative;
 	margin: 10px;
-	bottom: 20px;
 	float: left;
 	/* Hex Mask */
 	-webkit-clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);

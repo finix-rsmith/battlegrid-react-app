@@ -1,23 +1,22 @@
-import './App.css'
-import { Logo } from '../Logo/Logo.js'
-import Tile from '../Tile/Tile.js'
-import Tilelist from '../Tilelist/Tilelist.js'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar.js'
+import Home from '../Home/Home.js'
+import Collection from '../Collection/Collection.js'
+import './App.css'
 
-function App() {
+const App = () => {
   return (
-    <div className='App'>
-      <Navbar />
-      <header className='App-header'>
-        <Logo Link='/' />
-        <div>Collectible Strategy Game</div>
-        <div>
-          <Tile Title='Characters' Link='/characters' />
-          <Tile Title='Terrain' Link='/terrains' />
-          <Tilelist Path='characters' />
-        </div>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <Navbar />
+        <Routes>
+          <Route path='/collection' element={<Collection/>}></Route>
+          <Route path='/collection/:filter'></Route>
+          <Route path='/collection/:item'></Route>
+          <Route path='/' element={<Home/>}></Route>
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
