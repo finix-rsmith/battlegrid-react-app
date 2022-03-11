@@ -7,7 +7,7 @@
 }
 
 .Logo img {
-	height: 100px;	
+	height: 100px;
 }
 
 .Icon {
@@ -21,6 +21,7 @@
 
 .Icon img {
 	height: 50px;
+	float: left;
 }
 
 /*

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import { useLocation, useParams } from 'react-router-dom'
 import styles from './Tilelist.module.css'
 
-const Tilelist = (props) => {
-  const [TileList, setTileList] = React.useState(null)
-  const APIpath = 'https://battlegrid-rails-api.herokuapp.com/' + `${props.Path}`
+const Tilelist = () => {
+  const [TileList, setTileList] = useState([])
+  const APIpath = 'https://battlegrid-rails-api.herokuapp.com/tiles'
   const APIcall = () => {
     fetch(APIpath)
       .then(results => results.json())
@@ -12,11 +13,12 @@ const Tilelist = (props) => {
         const {tiles} = data.results
         setTileList(tiles)
       })
+      .catch((err) => console.log(err))
   }
-  React.useEffect(APIcall, [])
+  useEffect(APIcall, [])
   return (
     <div className={styles.Tilelist} data-testid='Tilelist'>
-      { !TileList ? `Loading ${props.Path} tiles...` : `${TileList}` }
+      { !TileList ? `Loading tiles...` : `${TileList}` }
     </div>
   )
 }

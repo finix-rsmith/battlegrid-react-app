@@ -1,4 +1,12 @@
 .Editor {
+	background-size: cover;
+	min-height: 100vh;
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+}
+
+.Editor form {
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	width: 400px;
@@ -9,4 +17,10 @@
 
 .Editor input {
 	width: calc(100% - 10px);
+}
+
+.Editor textarea {
+	width: calc(100% - 8px);
+	font-family: sans-serif;
+	float: left;
 }

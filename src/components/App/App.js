@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar.js'
 import Home from '../Home/Home.js'
 import Collection from '../Collection/Collection.js'
+import Item from '../Item/Item.js'
+import Editor from '../Editor/Editor.js'
 import './App.css'
 
 const App = () => {
@@ -11,8 +13,9 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path='/collection' element={<Collection/>}></Route>
-          <Route path='/collection/:filter'></Route>
-          <Route path='/collection/:item'></Route>
+          <Route path='/collection/new' element={<Editor/>}></Route>
+          <Route path='/collection/:id' element={<Item/>}></Route>
+          <Route path='/collection/:id/edit' element={<Editor/>}></Route>
           <Route path='/' element={<Home/>}></Route>
         </Routes>
       </div>

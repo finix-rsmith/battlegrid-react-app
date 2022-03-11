@@ -8,8 +8,7 @@ const Navbar = () => (
   <nav className={styles.Navbar} data-testid='Navbar'>
     <Icon Link='/' />
     <Navlink Title='Collection' Link='/collection' />
-    <Navlink Title='Characters' Link='/collection/characters' />
-    <Navlink Title='Terrain' Link='/collection/terrains' />
+    <Navlink Title='Create' Link='/collection/new' />
   </nav>
 )
 
