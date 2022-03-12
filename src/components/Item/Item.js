@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { Route, Link, Redirect } from 'react-router-dom'
 import styles from './Item.module.css'
 
 const Item = ({ match }) => {
+  console.log(match)
   const [data, setData] = useState([])
-  const APIpath = 'https://battlegrid-rails-api.herokuapp.com/collection' + `${match.params.id}`
+  const APIpath = 'https://battlegrid-rails-api.herokuapp.com/tiles/1' // + `${match.params.id}`
   const APIcall = () => {
     fetch(APIpath)
       .then(results => results.json())

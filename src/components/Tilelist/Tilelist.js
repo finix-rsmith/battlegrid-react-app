@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { useLocation, useParams } from 'react-router-dom'
+import Tile from '../Tile/Tile.js'
 import styles from './Tilelist.module.css'
 
 const Tilelist = () => {
@@ -10,15 +11,14 @@ const Tilelist = () => {
     fetch(APIpath)
       .then(results => results.json())
       .then(data => {
-        const {tiles} = data.results
-        setTileList(tiles)
+        setTileList(data.results)
       })
       .catch((err) => console.log(err))
   }
   useEffect(APIcall, [])
   return (
     <div className={styles.Tilelist} data-testid='Tilelist'>
-      { !TileList ? `Loading tiles...` : `${TileList}` }
+      { !TileList ? `Loading assets... ${TileList}` : `${TileList}` }
     </div>
   )
 }

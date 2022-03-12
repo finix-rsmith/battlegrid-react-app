@@ -9,8 +9,7 @@ const Collection = () => (
   <div className={styles.Collection} data-testid="Collection">
     <Tile Title='New' Link='/collection/new' />
     <Tile Title='Edit' Link='/collection/1/edit' />
-    <Tilelist Path='characters' />
-    <Tilelist Path='terrain' />
+    <Tilelist Path='tiles' />
   </div>
 )
 
