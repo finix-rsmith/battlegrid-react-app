@@ -6,19 +6,32 @@ import styles from './Tilelist.module.css'
 
 const Tilelist = () => {
   const [TileList, setTileList] = useState([])
-  const APIpath = 'https://battlegrid-rails-api.herokuapp.com/tiles'
-  const APIcall = () => {
-    fetch(APIpath)
+  const API = 'https://battlegrid-rails-api.herokuapp.com/'
+  const APIcall = (path) => {
+    fetch(API + path)
       .then(results => results.json())
       .then(data => {
-        setTileList(data.results)
+        console.log(data)
+        setTileList(data)
       })
       .catch((err) => console.log(err))
   }
-  useEffect(APIcall, [])
+
+  const Template = 
+    <div>
+      {Object.keys(TileList).map(tile => (
+        <Tile Title={TileList[tile].name} Link={'collection/' + TileList[tile].id} Image={TileList[tile].image_url} key={tile} />
+      ))}
+    </div>
+
+  useEffect( () => {
+    APIcall('tiles')
+    return () => ( setTileList([]) )
+  }, [])
+
   return (
     <div className={styles.Tilelist} data-testid='Tilelist'>
-      { !TileList ? `Loading assets... ${TileList}` : `${TileList}` }
+      { Template }
     </div>
   )
 }

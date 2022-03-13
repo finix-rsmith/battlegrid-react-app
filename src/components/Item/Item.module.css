@@ -1,3 +1,20 @@
 .Item {
 	margin-top: 80px;
+	color: #fff;
+}
+
+.Item img {
+	width: 50%;
+	float: left;
+}
+
+.Item ul {
+	width: calc(50% - 40px);
+	margin: 0;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.5);
+	float: left;
+}
+.Item li {
+	list-style: none;
 }

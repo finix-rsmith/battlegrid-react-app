@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import styles from './Editor.module.css'
 
 const Editor = () => {
-  const [postId, setPostId] = useState(null)
+  const [postId, setPostId] = useState([])
   const APIpath = 'https://battlegrid-rails-api.herokuapp.com/tiles'
   const requestOptions = {
     method: 'POST',
