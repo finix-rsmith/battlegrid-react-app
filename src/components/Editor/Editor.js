@@ -54,7 +54,7 @@ const Editor = () => {
         <input type='number' name='resource_quantity' placeholder='Cost'/>
         <input type='number' name='health' placeholder='Health' />
         <input type='number' name='attack' placeholder='Attack' />
-        <input type='number' name='range' placeholder='Range' />
+        <input type='number' name='speed' placeholder='Speed' />
         <input type='number' name='initiative' placeholder='Initiative' />
         <input type='text' name='specials' placeholder='Specials' />
         <input type='text' name='image_url' placeholder='Image URL'/>
