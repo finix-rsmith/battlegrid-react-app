@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar.js'
 import MetaMaskAuth from '../metamask-react-auth/metamask-auth.js'
 import Home from '../Home/Home.js'
