@@ -6,3 +6,54 @@
 	top: 0;
 	z-index: 999;
 }
+
+.Navbar ul {
+	margin: 0;
+	padding: 0;
+}
+.Navbar li {
+	list-style: none;
+}
+.Navbar button {
+	background: #222;
+	color: #fff;
+	float: right;
+	height: 80px;
+	padding: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+}
+
+.Mobile {
+	display: none;
+}
+ul.Mobile {
+	background: #222;
+	width: 100%;
+	float: left;
+}
+.Mobile li {
+	width: 100%;
+	float: left;
+}
+
+.Mobile a {
+	width: 100%;
+	float: left;
+}
+
+.Hidden {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.Desktop {display: none;}
+	.Mobile {display: block;}
+	span {
+		width: calc(100% - 40px);
+		text-align: center;
+	}
+}
