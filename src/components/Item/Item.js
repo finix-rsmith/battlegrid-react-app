@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Route, Link, Redirect, useParams } from 'react-router-dom'
 import API from '../Config/API.js'
 import Tile from '../Tile/Tile.js'
+import DeleteButton from '../DeleteButton/DeleteButton.js'
 import styles from './Item.module.css'
 
 const Item = () => {
@@ -41,6 +42,7 @@ const Item = () => {
           <li>Specials: {ItemData.specials}</li>
         </ul>
         <a href={`/collection/${ItemData.id}/edit`}>Edit</a>
+        <DeleteButton/>
       </div>
     </div>
   )

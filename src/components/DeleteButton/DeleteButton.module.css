@@ -1,0 +1,16 @@
+.DeleteButton button {
+	background: #ddd;
+	color: #444;
+	border: none;
+	padding: 5px 10px;
+	margin: 10px 0 0 10px;
+	line-height: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	float: left;
+}
+
+.DeleteButton button:hover {
+	background: #fff;
+	color: #fa3;
+}
