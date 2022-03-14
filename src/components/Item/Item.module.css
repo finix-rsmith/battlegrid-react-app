@@ -3,12 +3,33 @@
 	color: #fff;
 }
 
-.Item ul {
+.InfoPanel {
 	margin: 10px;
 	padding: 20px;
 	background: rgba(0, 0, 0, 0.5);
 	float: left;
 }
-.Item li {
+
+.InfoPanel ul {
+	margin: 0;
+	padding: 0;
+}
+
+.InfoPanel li {
 	list-style: none;
+}
+
+.InfoPanel a {
+	background: #ddd;
+	color: #444;
+	padding: 5px 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	float: left;
+}
+
+.InfoPanel a:hover {
+	background: #fff;
+	color: #fa3;
 }

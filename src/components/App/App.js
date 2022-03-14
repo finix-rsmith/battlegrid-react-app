@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar.js'
-import Metamask from '../Metamask/Metamask.js'
 import Home from '../Home/Home.js'
 import Collection from '../Collection/Collection.js'
 import Item from '../Item/Item.js'
@@ -11,7 +10,6 @@ const App = () => {
   return (
     <Router>
       <div className='App'>
-        <Metamask onAddressChanged={address => {}} />
         <Navbar />
         <Routes>
           <Route path='/collection' element={<Collection/>}></Route>

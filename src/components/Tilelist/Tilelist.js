@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { useLocation, useParams } from 'react-router-dom'
+import API from '../Config/API.js'
 import Tile from '../Tile/Tile.js'
 import styles from './Tilelist.module.css'
 
 const Tilelist = () => {
   const [TileList, setTileList] = useState([])
-  const API = 'https://battlegrid-rails-api.herokuapp.com/'
   const APIcall = (path) => {
     fetch(API + path)
       .then(results => results.json())
