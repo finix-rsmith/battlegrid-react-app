@@ -1,10 +1,12 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 import API from '../Config/API.js'
 import styles from './Editor.module.css'
 
 const Editor = () => {
   const { id } = useParams()
+  const navigate = useNavigate()
+
   let requestOptions = {}
 
   const APIcall = (path, item = '', data = {}) => {
@@ -28,6 +30,7 @@ const Editor = () => {
       .then(results => results.json())
       .then(data => {
         console.log(data)
+        navigate(`/collection/${data.id}`)
       })
       .catch((err) => console.log(err))
   }
