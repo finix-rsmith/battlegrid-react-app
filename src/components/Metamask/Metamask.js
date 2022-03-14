@@ -59,7 +59,7 @@ export default function MetaMaskAuth({ onAddressChanged }) {
 
 function Connect({ setUserAddress }) {
   if (isMobileDevice()) {
-    const dappUrl = "battlegrid-react-app"
+    const dappUrl = "battlegrid-react-app.herokuapp.com"
     const metamaskAppDeepLink = "https://metamask.app.link/dapp/" + dappUrl
     return (
       <a href={metamaskAppDeepLink}>
