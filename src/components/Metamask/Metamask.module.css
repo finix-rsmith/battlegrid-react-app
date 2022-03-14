@@ -1,0 +1,41 @@
+.Metamask {}
+
+.button {
+  background-color: #fa3;
+  color: #fff;
+  height: 80px;
+  padding: 20px;
+  border: none;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: fixed;
+  right: 0;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.button:hover {
+  background: #fb2;
+}
+
+.address {
+  background-color: #fa3;
+  color: #fff;
+  height: 40px;
+  padding: 20px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+}
+
+.button img, .address img {
+  height: 40px;
+  margin-right: 10px;
+  float: left;
+}
