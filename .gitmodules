@@ -1,0 +1,3 @@
+[submodule "src/components/metamask-react-auth"]
+	path = src/components/metamask-react-auth
+	url = https://github.com/ilamanov/metamask-react-auth

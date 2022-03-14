@@ -33,8 +33,8 @@ const Editor = () => {
         <input type='text' name='types' placeholder='Types' required />
         <input type='text' name='faction' placeholder='Faction' required />
         <input type='text' name='rarity' placeholder='Rarity' required />
-        <input type='text' name='resource_types' placeholder='Resource Types' required />
-        <input type='number' name='resource_quantity' placeholder='Resource Quantity' required />
+        <input type='text' name='resource_types' placeholder='Resources' required />
+        <input type='number' name='resource_quantity' placeholder='Cost' required />
         <input type='number' name='health' placeholder='Health' />
         <input type='number' name='attack' placeholder='Attack' />
         <input type='number' name='range' placeholder='Range' />

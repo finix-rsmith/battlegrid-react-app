@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Route, Link, Redirect, useParams } from 'react-router-dom'
+import Tile from '../Tile/Tile.js'
 import styles from './Item.module.css'
 
 const Item = () => {
   const [ItemData, setItemData] = useState([])
   const { id } = useParams()
+
   const APIpath = 'https://battlegrid-rails-api.herokuapp.com/tiles/'
   const APIcall = (item) => {
     fetch(APIpath + item)
@@ -16,6 +18,7 @@ const Item = () => {
       })
       .catch((err) => console.log(err))
   }
+
   useEffect( () => {
     APIcall(id)
     return () => ( setItemData([]) )
@@ -23,8 +26,7 @@ const Item = () => {
 
   return (
     <div className={styles.Item} data-testid='Item'>
-      <h1>{ItemData.name}</h1>
-      <img src={ItemData.image_url} />
+      <Tile Title={ItemData.name} Image={ItemData.image_url} />
       <ul>
         <li>Types: {ItemData.types}</li>
         <li>Faction: {ItemData.faction}</li>

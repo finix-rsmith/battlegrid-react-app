@@ -18,5 +18,5 @@
 
 .Navlink a:hover {
 	color: rgba(255, 255, 255, 1.0);
-	background-color: rgba(0, 0, 0, 0.5);	
+	background-color: #000;	
 }
