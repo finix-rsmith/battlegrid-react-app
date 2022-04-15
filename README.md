@@ -1,6 +1,6 @@
 # Battlegrid
 
-View demo on [Heroku](battlegrid-react-app.heroku.com)
+View demo on [Heroku](https://battlegrid-react-app.herokuapp.com)
 
 ## Copyright
 2022 TZRKT Entertainment Inc.
